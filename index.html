@@ -1,0 +1,87 @@
+<html> 
+<head>
+	<!--Estilos-->
+	<link href="Utilidades/Bootstrap/bootstrap.min.css" rel="stylesheet">
+	<link href="Utilidades/estilos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!--Acciones-->
+
+	<script src="Utilidades/jquery.min.js"></script>
+	<script type="text/javascript" async="" src="Utilidades/acciones.js"></script>
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu fisica</title> 
+</head> 
+<body> 
+	<div class="row">
+		<div class="col-sm-2">
+			<img src="Utilidades/Imagenes/logo_UD.png" alt="Logo de la universidad distrital" class="img_logo" onclick="navegacionPagina('index','')">
+		</div>
+		<div class="col-sm-10" align="center">
+			<h1 class="titulo">Ondas y Física Moderna</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+			<!-- Contenedor -->
+			<ul id="accordion" class="accordion">
+				<li class="default open">
+					<div class="link"><i class="fa fa-paint-brush"></i>Movimiento ondulatorio (C-16)<i class="fa fa-chevron-down"></i></div>
+					<ul class="submenu">
+						<li><a href="#movOndulatorio" onclick="navegacionPagina('Capitulo16','movimientoOndulatorio')">Variables básicas del movimiento ondulatorio</a></li>
+						<li><a href="#desParticula" onclick="navegacionPagina('Capitulo16','desplazamientoParticulas')">Dirección del desplazamiento de las particulas</a></li>
+						<li><a href="#ondaViajera" onclick="navegacionPagina('Capitulo16','ondaViajera')">Ondas Viajeras Unidimensionales</a></li>
+						<li><a href="#superPosicion" onclick="navegacionPagina('Capitulo16','superposicion')">Superposición e interferencia</a></li>
+						<li><a href="#ondaCuerda" onclick="navegacionPagina('Capitulo16','ondaCuerda')">La rapidez de las ondas en las cuerdas</a></li>
+						<li><a href="#trasmi" onclick="navegacionPagina('Capitulo16','trasmision')">Reflexión y transmisión</a></li>
+						<li><a href="#ondaSenoidal" onclick="navegacionPagina('Capitulo16','ondaSenoidal')">Ondas Senoidales</a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="link"><i class="fa fa-code"></i>Superposición y ondas estacionarias<(C-18)<i class="fa fa-chevron-down"></i></div>
+					<ul class="submenu">
+						<li><a href="#" onclick="navegacionPagina('Capitulo18','superposicionOnda')">Superposición e interferencia de ondas senoidales</a></li>
+						<li><a href="#" onclick="navegacionPagina('Capitulo18','ondaEstacionaria')">Ondas Estacionarias</a></li>
+						<li><a href="#" onclick="navegacionPagina('Capitulo18','cuerdaFija')">Ondas Estacionarias en una cuerda fija en ambos extremos</a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="link"><i class="fa fa-code"></i>Ley de Gauss (C-24)<i class="fa fa-chevron-down"></i></div>
+					<ul class="submenu">
+						<li><a href="#" onclick="navegacionPagina('Capitulo24','flujoElectrico')">Flujo eléctrico</a></li>
+						<li><a href="#" onclick="navegacionPagina('Capitulo24','leyGauss')">Ley de Gauss</a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="link"><i class="fa fa-mobile"></i>Campos Magnéticos (C-29)<i class="fa fa-chevron-down"></i></div>
+					<ul class="submenu">
+						<li><a href="#">El campo magnético</a></li>
+						<!--<li><a href="#">Dispositivos mobiles</a></li>
+						<li><a href="#">Medios de escritorio</a></li>
+						<li><a href="#">Otros dispositivos</a></li>-->
+					</ul>
+				</li>
+				<li><div class="link"><i class="fa fa-globe"></i>Seminarios<i class="fa fa-chevron-down"></i></div>
+					<ul class="submenu">
+						<li><a href="#">Exposición seminario 1</a></li>
+						<li><a href="#">Exposición seminario 2</a></li>
+						<li><a href="#">Exposición seminario 3</a></li>
+						<li><a href="#">Exposición seminario 4</a></li>
+						<li><a href="#">Exposición seminario 5</a></li>
+						<li><a href="#">Exposición seminario 6</a></li>
+						<li><a href="#">Exposición seminario 7</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="col-sm-8">
+			<iframe src="portada.html"  marginwidth="0" marginheight="0" name="ventana_iframe" scrolling="no" border="0" frameborder="0" width="800" height="600" id="contenedorPrincipal1">
+						
+			</iframe>
+
+		</div>
+	</div>
+	
+</body> 
+</html>

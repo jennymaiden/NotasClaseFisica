@@ -1,0 +1,35 @@
+<script src="Utilidades/jquery.min.js"></script>
+<script type="text/javascript">
+	
+	 $(document).ready(function(){
+                $('iframe').load(function(){
+                    var $head = $(this).contents().find("head");
+                    
+                    $head.append($("<link/>", { 
+                            rel: "stylesheet", 
+                            href: "Utilidades/Bootstrap/bootstrap.min.css", 
+                            type: "text/css" 
+                    }));
+                    this.style.height = this.contentWindow.document.body.offsetHeight + 'px';                        
+                })
+            })
+</script>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<a href="#" class="btn btn-success">Boton</a>
+			<h1>Material de estudio</h1>
+			<h2 align="center">
+				<a target="_blank" href="https://drive.google.com/uc?export=download&amp;id=1N6LGqB48q-1JhKp-7QUqT0RZVDjY149D">Física de Serway 5 Edición Tomo I - Ondas Mecánicas - Termodinámica</a>
+			</h2>
+			<h2 align="center">
+				<a target="_blank" href="https://drive.google.com/uc?export=download&amp;id=1DsN2AuGmLZDP_7ypiSSem56Omv30xz_z">Física de Serway 5 Edición Tomo II - Electricidad y Magnetismo</a>
+			</h2>
+			<h2 align="center">
+				<a target="_blank" href="https://drive.google.com/uc?export=download&amp;id=1pAblBHL7YeQ6AxXR3VB4ybeUDnAiBSOJ">Física de Serway 5 Edición Tomo II - Luz y Óptica - Física Moderna</a>
+			</h2>
+		</div>
+	</div>
+</div>
+<p>Hola mundo aaaaa bbbb ccc dddd eeee fffff ggg</p>
+	
