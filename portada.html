@@ -1,35 +1,24 @@
-<script src="Utilidades/jquery.min.js"></script>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Campo magnetico</title>
+  </head>
+  <body>
+    <div class="panel-group">
 
-<link rel="Utilidades/Bootstrap/bootstrap.min.css" href="mystyle.css">
-<style type='text/css' src>
-  body {background-color: powderblue;}
-  h1 {color: red;}
-  p {color: blue;}
-</style>
-<script type="text/javascript">
-	var uri = window.location.toString(),
-		// Remove all but parameters
-		uri_parameters = uri.substring(uri.indexOf('?') + 1),
-		// Key Value Pairs (i.e. color=blue); convert to css syntax string
-		kvp = uri_parameters.replace(/\;/g,'').replace(/\&/g,';').replace(/\=/g,':') + ';';
-		// Change the style
-		document.body.style.cssText = kvp;
-</script>
-<div class="container">
-	<div class="row">
-		<div class="col-sm-12">
-			<a href="#" class="btn btn-success">Boton</a>
-			<h1>Material de estudio</h1>
-			<h2 align="center">
-				<a target="_blank" href="https://drive.google.com/uc?export=download&amp;id=1N6LGqB48q-1JhKp-7QUqT0RZVDjY149D">Física de Serway 5 Edición Tomo I - Ondas Mecánicas - Termodinámica</a>
-			</h2>
-			<h2 align="center">
-				<a target="_blank" href="https://drive.google.com/uc?export=download&amp;id=1DsN2AuGmLZDP_7ypiSSem56Omv30xz_z">Física de Serway 5 Edición Tomo II - Electricidad y Magnetismo</a>
-			</h2>
-			<h2 align="center">
-				<a target="_blank" href="https://drive.google.com/uc?export=download&amp;id=1pAblBHL7YeQ6AxXR3VB4ybeUDnAiBSOJ">Física de Serway 5 Edición Tomo II - Luz y Óptica - Física Moderna</a>
-			</h2>
-		</div>
-	</div>
-</div>
-<p>Hola mundo aaaaa bbbb ccc dddd eeee fffff ggg</p>
+  		<div class="panel panel-warning" >
+  	      <div class="panel-heading" align="center"><h2>Material de estudio</h2></div>
+  	      <div class="panel-body">
+            <ul>
+              <li><a target="_blank" href="https://drive.google.com/uc?export=download&amp;id=1N6LGqB48q-1JhKp-7QUqT0RZVDjY149D">Física de Serway 5 Edición Tomo I - Ondas Mecánicas - Termodinámica</a></li>
+              <li><a target="_blank" href="https://drive.google.com/uc?export=download&amp;id=1DsN2AuGmLZDP_7ypiSSem56Omv30xz_z">Física de Serway 5 Edición Tomo II - Electricidad y Magnetismo</a></li>
+              <li><a target="_blank" href="https://drive.google.com/uc?export=download&amp;id=1pAblBHL7YeQ6AxXR3VB4ybeUDnAiBSOJ">Física de Serway 5 Edición Tomo II - Luz y Óptica - Física Moderna</a></li>
+            </ul>
+
+          </div>
+  	    </div>
+  	</div>
+  </body>
+</html>
