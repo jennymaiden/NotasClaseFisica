@@ -22,13 +22,24 @@ $( document ).ready(function() {
 		if (!e.data.multiple) {
 			$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
 		};
-	}	
+	}
 
 	var accordion = new Accordion($('#accordion'), false);
 
-	$('#contenedorPrincipal1').load(function () {
-		$(this).contents().find("p").css({'background-color':'red','font-weight':'bolder','color':'white'});
-	});
+  /*var cssLink = document.createElement("link");
+cssLink.href = "Utilidades/Bootstrap/bootstrap.min.css";
+cssLink.rel = "stylesheet";
+cssLink.type = "text/css";
+frames['ventana_iframe'].document.head.appendChild(cssLink);*/
+
+var frm = frames['ventana_iframe'].document;
+var otherhead = frm.getElementsByTagName("head")[0];
+var link = frm.createElement("link");
+link.setAttribute("rel", "stylesheet");
+link.setAttribute("type", "text/css");
+link.setAttribute("href", " Utilidades/Bootstrap/bootstrap.css");
+otherhead.appendChild(link);
+
 });
 
 /*var acc = document.getElementsByClassName("accordion");
@@ -64,8 +75,8 @@ function navegacionPagina(tema, subtema){
 	if(tema =="index"){
 		ruta = "portada.html"
 	}
-	
+
 	console.log("La ruta que va cargar es:....."+ruta);
 	$('#contenedorPrincipal').load(ruta);
-	window.frames["ventana_iframe"].location = ruta; 
+	window.frames["ventana_iframe"].location = ruta;
 }

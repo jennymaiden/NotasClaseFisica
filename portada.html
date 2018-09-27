@@ -1,18 +1,19 @@
 <script src="Utilidades/jquery.min.js"></script>
+
+<link rel="Utilidades/Bootstrap/bootstrap.min.css" href="mystyle.css">
+<style type='text/css' src>
+  body {background-color: powderblue;}
+  h1 {color: red;}
+  p {color: blue;}
+</style>
 <script type="text/javascript">
-	
-	 $(document).ready(function(){
-                $('iframe').load(function(){
-                    var $head = $(this).contents().find("head");
-                    
-                    $head.append($("<link/>", { 
-                            rel: "stylesheet", 
-                            href: "Utilidades/Bootstrap/bootstrap.min.css", 
-                            type: "text/css" 
-                    }));
-                    this.style.height = this.contentWindow.document.body.offsetHeight + 'px';                        
-                })
-            })
+	var uri = window.location.toString(),
+		// Remove all but parameters
+		uri_parameters = uri.substring(uri.indexOf('?') + 1),
+		// Key Value Pairs (i.e. color=blue); convert to css syntax string
+		kvp = uri_parameters.replace(/\;/g,'').replace(/\&/g,';').replace(/\=/g,':') + ';';
+		// Change the style
+		document.body.style.cssText = kvp;
 </script>
 <div class="container">
 	<div class="row">
@@ -32,4 +33,3 @@
 	</div>
 </div>
 <p>Hola mundo aaaaa bbbb ccc dddd eeee fffff ggg</p>
-	
